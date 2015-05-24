@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:layout_margin="5dip" >
+    <ImageView
+        android:id="@+id/ic_left"
+        android:layout_width="40dp"
+        android:layout_height="350dp"
+        android:focusableInTouchMode="false"
+        android:src="@drawable/left"
+        />
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        >
+
+        <ImageView
+            android:id="@+id/fragment_recommendation_recommend_video_item_image"
+            android:layout_width="720dp"
+            android:layout_height="350dp"
+            android:layout_centerHorizontal="true"
+            android:focusableInTouchMode="false"
+            android:scaleType="fitCenter"
+            />
+
+        <TextView
+            android:id="@+id/fragment_recommendation_recommend_video_item_text"
+            android:layout_width="720dp"
+            android:layout_height="40dp"
+            android:layout_below = "@+id/fragment_recommendation_recommend_video_item_image"
+            android:textSize="20px"
+            android:paddingLeft="30dp"
+            android:gravity="left"/>
+
+        <LinearLayout
+            android:id="@+id/viewgroup"
+            android:layout_width="720dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:paddingRight="30dp"
+            android:gravity="right"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/ic_right"
+        android:layout_width="40dp"
+        android:layout_height="350dp"
+        android:focusableInTouchMode="false"
+        android:src="@drawable/right"
+        />
+</LinearLayout>

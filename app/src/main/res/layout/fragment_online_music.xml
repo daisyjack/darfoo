@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="0dp"
+    tools:context="com.darfoo.darfoolauncher.fragment.BaseContentFragment">
+
+		<LinearLayout
+            android:id="@+id/information_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <ImageView
+                android:background="@drawable/online_music_bk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="8dp"
+        android:layout_below="@id/information_layout">
+
+        <GridView
+            android:id="@+id/gridview_music"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            android:gravity="center"
+            android:paddingTop="18dp"
+            android:horizontalSpacing="10dp"
+            android:layout_marginLeft="1dip"
+            android:layout_marginRight="1dip"
+            android:cacheColorHint="#00000000"
+            android:clipToPadding="true" />
+
+        <ProgressBar
+            android:id="@+id/progressbar_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="invisible"/>
+
+    </FrameLayout>
+
+</RelativeLayout>

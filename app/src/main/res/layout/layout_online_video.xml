@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+        <TextView
+            android:id="@+id/online_textView"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="网上视频" />
+
+    </RelativeLayout>
+
+<GridView 
+    android:id="@+id/online_video_girdview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:verticalSpacing="20dp"  
+    android:horizontalSpacing="20dp"  
+    android:columnWidth="120dp"  
+    android:stretchMode="columnWidth"  
+    android:gravity="center" 
+    android:numColumns="auto_fit" >
+</GridView>
+</LinearLayout>

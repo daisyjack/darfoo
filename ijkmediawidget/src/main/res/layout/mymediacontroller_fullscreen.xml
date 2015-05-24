@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/controller_layout"
+    android:layout_width="match_parent"
+    android:layout_height="98dip"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="0.0dip"
+    android:layout_marginLeft="0.0dip"
+    android:layout_marginRight="0dip"
+    android:padding="0dp"
+    android:background="#fff1f1f1"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffb8b8b8"/>
+
+    <ImageButton
+        android:id="@+id/mediacontroller_play_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="42dip"
+        android:layout_marginTop="28dp"
+        android:background="#00000000"
+        android:contentDescription="@string/mediacontroller_play_pause"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/mediacontroller_pause_button" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dip"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="23dip"
+        android:layout_marginTop="2dip"
+        android:padding="0dp"
+        android:layout_toRightOf="@+id/mediacontroller_play_pause"
+        android:layout_toLeftOf="@+id/mediacontroller_download">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/mediacontroller_time_current"
+                style="@style/MediaController_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff6482f"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:id="@+id/mediacontroller_time_total"
+                style="@style/MediaController_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff6482f"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true" />
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/mediacontroller_seekbar"
+            style="@style/MediaController_SeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="0dp"
+            android:focusable="true"
+            android:max="1000" />
+
+        <TextView
+            android:id="@+id/mediacontroller_file_name"
+            style="@style/MediaController_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:ellipsize="marquee"
+            android:visibility="invisible"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+
+
+    <ImageButton
+        android:id="@+id/mediacontroller_fullscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="38dp"
+        android:layout_marginTop="30dp"
+        android:background="#00000000"
+        android:gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/mediacontroller_restorescreen_button" />
+
+    <ImageButton
+        android:id="@+id/mediacontroller_share"
+        android:layout_width="44dp"
+        android:layout_height="61dp"
+        android:layout_toLeftOf="@id/mediacontroller_fullscreen"
+        android:layout_marginRight="34dp"
+        android:layout_marginTop="28dp"
+        android:layout_centerHorizontal="true"
+        android:background="#00000000"
+        android:gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/mediacontroller_share_button" />
+
+    <ImageButton
+        android:id="@+id/mediacontroller_download"
+        android:layout_width="44dp"
+        android:layout_height="61dp"
+        android:layout_toLeftOf="@id/mediacontroller_share"
+        android:layout_marginRight="34dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:background="#00000000"
+        android:gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/mediacontroller_download_button" />
+
+
+
+</RelativeLayout>

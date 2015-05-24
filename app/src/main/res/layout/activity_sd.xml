@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/local_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="#fff34930"
+        android:orientation="horizontal" >
+        "
+        <TextView
+            android:id="@+id/local_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:text="SD卡管理" />
+
+        <ImageButton
+            android:id="@+id/sd_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@null"
+            android:src="@drawable/sdimport"
+            android:textColor="#FFFFFF"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="46dp"
+            android:layout_marginEnd="46dp" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/sd_detail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:text="选择"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:background="@drawable/music_textview_bg"
+        android:layout_width="0dp" />
+
+    <TextView
+        android:layout_weight="4"
+        android:layout_height="match_parent"
+        android:text="存储卡文件"
+        android:gravity="center"
+        android:background="@drawable/music_textview_bg"
+        android:textSize="20sp"
+        android:layout_width="0dp" />
+
+    <TextView
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:text="艺术家"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:background="@drawable/music_textview_bg"
+        android:layout_width="0dp" />
+    <TextView
+        android:layout_weight="3"
+        android:layout_height="match_parent"
+        android:text="格式"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:background="@drawable/music_textview_bg"
+        android:layout_width="0dp" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/sd_media_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+</LinearLayout>

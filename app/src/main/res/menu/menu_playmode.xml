@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.darfoo.darfoolauncher.activity.CategoryActivity">
+    <item android:id="@+id/playmode_order"
+        android:title="顺序播放"
+        android:icon="@drawable/ic_launcher"
+        />
+    <item android:id="@+id/playmode_shuf"
+        android:title="随机播放" />
+    <item android:id="@+id/playmode_repeat"
+        android:title="单曲循环" />
+</menu>

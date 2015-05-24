@@ -1,0 +1,71 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.darfoo.darfoolauncher.fragment.SearchFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+        <EditText
+            android:id="@+id/edittext_search"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignBottom="@android:id/tabs"
+            android:layout_toRightOf="@android:id/tabs"
+            android:layout_toLeftOf="@+id/button_search"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:hint="请输入您想看的舞曲..."
+            android:background="@drawable/bg_search_box" />
+
+        <ImageButton
+            android:id="@id/button_search"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_alignBottom="@android:id/tabs"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_search" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@android:id/tabs">
+
+            <GridView
+                android:id="@+id/gridview_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnWidth="224dp"
+                android:horizontalSpacing="13dp"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="13dp"
+                android:paddingLeft="40dp"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:clipToPadding="false" />
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="invisible"/>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</TabHost>

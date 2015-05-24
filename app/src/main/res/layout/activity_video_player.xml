@@ -1,0 +1,181 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/list_relativelayout"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:background="#ffe3e3e3"
+        android:layout_alignParentRight="true">
+
+        <ListView
+            android:id="@+id/play_list"
+            android:layout_height="match_parent"
+            android:layout_width="263dp"
+            style="@android:style/Widget.DeviceDefault.Light.ListView"
+            android:layout_centerHorizontal="true"
+            android:background="#ffe3e3e3"
+            android:divider="#ffe3e3e3">
+
+        </ListView>
+
+        <ImageButton
+            android:id="@+id/list_up_button"
+            android:layout_width="263dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/ic_list_up"/>
+
+        <ImageButton
+            android:id="@+id/list_down_button"
+            android:layout_width="263dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:focusable="true"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:src="@drawable/ic_list_down"/>
+
+
+        <!--<ListView
+            android:id="@+id/play_list"
+            android:layout_height="match_parent"
+            android:layout_width="263dp"
+            style="@android:style/Widget.DeviceDefault.Light.ListView"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/list_up_button"
+            android:layout_above="@id/list_down_button"
+            android:background="#ffe3e3e3"
+            android:divider="#ffe3e3e3"
+            android:layout_toRightOf="@id/list_tab">
+
+        </ListView>-->
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/video_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/list_relativelayout"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:background="#ffd6d6d6"
+            android:layout_height="51dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:text="测试视频"/>
+
+        <FrameLayout
+            android:id="@+id/video_framelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            tools:context=".PlayerActivity"
+            android:layout_gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/video_relativeLayout"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+                android:layout_marginBottom="70dp"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:layout_gravity="center">
+
+                <tv.danmaku.ijk.media.widget.VideoView
+                    android:id="@+id/video_view"
+                    android:layout_alignParentTop="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+
+
+            <LinearLayout android:id="@+id/buffering_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusable="false"
+                android:layout_marginBottom="40dp"
+                android:focusableInTouchMode="false"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/buffering_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="0"
+                    android:scaleType="centerInside"
+                    android:singleLine="true"
+                    android:text="@string/buffering"
+                    android:textSize="12sp" />
+
+                <ProgressBar
+                    android:id="@+id/buffering_progress"
+                    style="@android:style/Widget.DeviceDefault.ProgressBar.Large"
+                    android:layout_width="60dip"
+                    android:layout_height="60dip" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/error_pattern"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_error_pattern"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:id="@+id/video_error_retry"
+                    android:src="@drawable/ic_retry_button"
+                    android:visibility="invisible"
+                    android:background="@null"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginLeft="40dp"/>
+
+            </FrameLayout>
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

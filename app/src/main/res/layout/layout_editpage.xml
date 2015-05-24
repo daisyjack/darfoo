@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:background="#ff0000"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/edit_page_button"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/edit_page_textView"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/edit_page_textView"
+            android:layout_marginRight="40dp"
+            android:textSize="14dp"
+            android:textColor="#ffffff"
+            android:text="保存"
+            android:gravity="center" />
+
+
+        <TextView
+            android:id="@+id/edit_page_textView"
+            android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:gravity="center"
+                      android:textSize="25dp"
+                      android:textColor="#ffffff"
+                      android:text="管理" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/edit_page_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="40dp" 
+       >
+    </ListView>
+
+</LinearLayout>

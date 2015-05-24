@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_below="@+id/linearlayout_categories"
+    android:layout_height="60dp">
+    <CheckBox
+        android:id="@+id/media_choose"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/sd_checkbox"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:button="@null"
+        android:layout_gravity="center"
+        android:checked="true"/>
+
+    <TextView
+        android:id="@+id/media_num"
+        android:layout_weight="1"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/media_name"
+        android:layout_weight="3"
+        android:gravity="center_vertical|left"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:maxLines="1"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/media_author"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textColor="#b2b2b2"
+        android:maxLines="3"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:textSize="15sp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:id="@+id/media_type"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:scrollHorizontally="true"
+        android:layout_height="match_parent" />
+</LinearLayout>

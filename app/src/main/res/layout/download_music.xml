@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/detail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="83"
+            android:layout_height="match_parent"
+            android:text="序号"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:background="@drawable/music_textview_bg"
+            android:layout_width="0dp" />
+
+        <TextView
+            android:layout_weight="417"
+            android:layout_height="match_parent"
+            android:text="标题"
+            android:gravity="center"
+            android:background="@drawable/music_textview_bg"
+            android:textSize="20sp"
+            android:layout_width="0dp" />
+
+        <TextView
+            android:layout_weight="236"
+            android:layout_height="match_parent"
+            android:text="艺术家"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:background="@drawable/music_textview_bg"
+            android:layout_width="0dp" />
+
+        <TextView
+            android:layout_weight="285"
+            android:layout_height="match_parent"
+            android:text="状态"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:background="@drawable/music_textview_bg"
+            android:layout_width="0dp" />
+        <!--<RelativeLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="285"-->
+            <!--android:gravity="center"-->
+            <!--android:background="@drawable/music_textview_bg"-->
+            <!--android:layout_height="match_parent">-->
+
+        <!--</RelativeLayout>-->
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/download_music_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

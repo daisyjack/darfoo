@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="category_titles">
+        <item>网上教学</item>
+        <item>本地视频</item>
+        <item>本地音乐</item>
+        <item>连接上网</item>
+        <item>设置</item>
+        <item>娱乐</item>
+    </string-array>
+
+    <string-array name="settings_titles">
+        <item>账户</item>
+        <item>无线</item>
+        <item>时间</item>
+        <item>亮度</item>
+        <item>新功能投票</item>
+        <item>大福商城</item>
+        <item>帮助</item>
+        <item>了解大福</item>
+    </string-array>
+
+    <string-array name="main_tab_titles">
+        <item>推荐</item>
+        <item>舞队</item>
+        <item>教学</item>
+        <item>欣赏</item>
+        <item>伴奏</item>
+        <item>下载</item>
+        <item>搜索</item>
+    </string-array>
+
+    <string-array name="dance_speed">
+        <item>全部</item>
+        <item>快</item>
+        <item>中</item>
+        <item>慢</item>
+    </string-array>
+
+    <string-array name="dance_level">
+        <item>全部</item>
+        <item>简单</item>
+        <item>普通</item>
+        <item>稍难</item>
+    </string-array>
+
+    <string-array name="teaching_category">
+        <item>全部</item>
+        <item>队形表演</item>
+        <item>背面教学</item>
+        <item>分解教学</item>
+    </string-array>
+
+    <string-array name="famous_teacher">
+        <item>全部</item>
+        <item>张大妈</item>
+        <item>李大妈</item>
+        <item>隔壁老王</item>
+    </string-array>
+
+    <string-array name="video_style">
+        <item>全部</item>
+        <item>欢快</item>
+        <item>活泼</item>
+        <item>优美</item>
+        <item>情歌风</item>
+        <item>红歌风</item>
+        <item>草原风</item>
+        <item>戏曲风</item>
+        <item>印巴风</item>
+        <item>江南风</item>
+        <item>民歌风</item>
+        <item>儿歌风</item>
+    </string-array>
+
+    <string-array name="music_beat">
+        <item>全部</item>
+        <item>四拍</item>
+        <item>八拍</item>
+        <item>十六拍</item>
+        <item>三十二拍</item>
+    </string-array>
+
+    <string-array name="music_style">
+        <item>全部</item>
+        <item>草原风</item>
+        <item>儿歌风</item>
+        <item>情歌风</item>
+        <item>红歌风</item>
+        <item>戏曲风</item>
+        <item>印巴风</item>
+        <item>江南风</item>
+        <item>民歌风</item>
+    </string-array>
+    
+    <string-array name="downloads_tab_titles">
+        <item>视频</item>
+        <item>音乐</item>
+    </string-array>
+
+    <string-array name="folder_connection_titles">
+        <item>无线连接</item>
+        <item>连接说明</item>
+        <item>浏览器</item>
+    </string-array>
+
+    <string-array name="folder_entertain_titles">
+        <item>电视剧</item>
+        <item>游戏</item>
+    </string-array>
+
+</resources>

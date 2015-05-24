@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.1"
+
+    defaultConfig {
+        applicationId "com.darfoo.darfoolauncher"
+        minSdkVersion 15
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled  false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    packagingOptions{
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/LICENSE.txt'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:support-v4:21.0.0'
+    compile 'com.koushikdutta.ion:ion:2.+'
+    compile project(':ijkmediaplayer')
+    compile project(':ijkmediawidget')
+    compile 'com.android.support:recyclerview-v7:+'
+    compile 'com.android.support:cardview-v7:+'
+    compile 'com.qiniu:qiniu-android-sdk:7.0.1'
+    compile 'commons-codec:commons-codec:1.10'
+    compile 'com.google.zxing:core:3.1.0'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'org.apache.commons:commons-email:1.3.3'
+    compile 'javamail:javamail:1.3.3'
+}
+

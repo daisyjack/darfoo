@@ -1,0 +1,54 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From ijkmediaplayer:
+* .cproject.bak
+* .gitignore
+* build.xml
+* proguard-project.txt
+From ijkmediawidget:
+* proguard-project.txt
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In ijkmediaplayer:
+* AndroidManifest.xml => ijkmediaplayer\src\main\AndroidManifest.xml
+* assets\ => ijkmediaplayer\src\main\assets\
+* jni\ => ijkmediaplayer\src\main\jni\
+* libs\armeabi-v7a\libijkadk.so => ijkmediaplayer\src\main\jniLibs\armeabi-v7a\libijkadk.so
+* libs\armeabi-v7a\libijkffmpeg.so => ijkmediaplayer\src\main\jniLibs\armeabi-v7a\libijkffmpeg.so
+* libs\armeabi-v7a\libijkplayer.so => ijkmediaplayer\src\main\jniLibs\armeabi-v7a\libijkplayer.so
+* libs\armeabi-v7a\libijksdl.so => ijkmediaplayer\src\main\jniLibs\armeabi-v7a\libijksdl.so
+* libs\armeabi-v7a\libijkutil.so => ijkmediaplayer\src\main\jniLibs\armeabi-v7a\libijkutil.so
+* libs\armeabi-v7a\libstlport_shared.so => ijkmediaplayer\src\main\jniLibs\armeabi-v7a\libstlport_shared.so
+* res\ => ijkmediaplayer\src\main\res\
+* src\ => ijkmediaplayer\src\main\java\
+In ijkmediawidget:
+* AndroidManifest.xml => ijkmediawidget\src\main\AndroidManifest.xml
+* assets\ => ijkmediawidget\src\main\assets\
+* res\ => ijkmediawidget\src\main\res\
+* src\ => ijkmediawidget\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

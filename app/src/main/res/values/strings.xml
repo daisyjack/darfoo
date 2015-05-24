@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">大福平板</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">搜索</string>
+    <string name="title_activity_category">CategoryActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_online">OnlineActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="confirm">确定</string>
+    <string name="game_action">com.darfoo.darfoolauncher.GAME</string>
+    <string name="download_video_action">com.darfoo.darfoolauncher.DownloadVideo</string>
+    <string name="download_music_action">com.darfoo.darfoolauncher.DownloadMusic</string>
+
+    <!-- lock screen -->
+    <string name="slide_to_unlock">向右滑动解锁 >>></string>
+    <!-- sdmanager -->
+
+    <string name="sd_btn">添加到本地</string>
+    <!-- status bar -->
+    <string name="battery_left">剩余电量</string>
+    <string name="battery_unknown">电量未知</string>
+    <string name="battery_charging">正在充电</string>
+    <string name="battery_charged">已充满</string>
+
+    <!-- online -->
+    <string name="title_teaching">教学列表</string>
+    <string name="title_video">舞蹈分类导航</string>
+    <string name="title_music">歌曲导航</string>
+    <string name="by_speed">按速度</string>
+    <string name="by_level">按难度</string>
+    <string name="by_style">按风格</string>
+    <string name="by_beat">按节拍</string>
+    <string name="by_category">教学类型</string>
+    <string name="by_teacher">名师教学</string>
+    <string name="all">全部</string>
+
+    <!-- display -->
+    <string name="display_settings">显示设置</string>
+    <string name="brightness">屏幕亮度</string>
+    <string name="brightness_auto">自动调节亮度</string>
+    <string name="font_size">字体大小</string>
+    <string name="title_activity_display_settings">DisplaySettingsActivity</string>
+    <string name="title_activity_video_player">VideoPlayerActivity</string>
+
+    <!-- mvplayer -->
+    <string name="buffering">正在缓冲</string>
+    <string name="title_activity_music_player">MusicPlayerActivity</string>
+    <string name="title_activity_intent_sender">IntentSender</string>
+
+    <!-- fragment_recommendation -->
+    <string name="recommendation_video">原创推荐</string>
+    <string name="latest_video">最新视频</string>
+    <string name="famous_dance_group">明星舞队</string>
+    <string name="title_activity_lock_screen">LockScreenActivity</string>
+    <string name="title_activity_browser">BrowserActivity</string>
+    <string name="title_activity_team_content">TeamContentActivity</string>
+    <string name="title_activity_connect_instruction">ConnectInstructionActivity</string>
+
+    <!-- RangeSeekbar -->
+
+    <string name="demo_min_label">00:00</string>
+    <string name="demo_max_label">Max</string>
+
+</resources>

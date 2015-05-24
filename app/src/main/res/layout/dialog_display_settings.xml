@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--<TextView-->
+            <!--android:id="@+id/textview_category_brightness"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:textAppearance="?android:textAppearanceLarge"-->
+            <!--android:text="@string/brightness" />-->
+
+        <!--<View-->
+            <!--android:id="@+id/view_divider_brightness"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="2dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:layout_below="@id/textview_category_brightness"-->
+            <!--android:background="@android:color/darker_gray" />-->
+
+        <TextView
+            android:id="@+id/textview_auto_brightness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:paddingLeft="12dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textSize="@dimen/text_size"
+            android:text="@string/brightness_auto" />
+
+        <Switch
+            android:id="@+id/switch_auto_brightness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="12dp"
+            android:layout_alignBaseline="@id/textview_auto_brightness"
+            android:layout_alignParentRight="true" />
+
+        <SeekBar
+            android:id="@+id/seekbar_brightness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@id/textview_auto_brightness"
+            android:max="255" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/textview_category_font"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_below="@id/seekbar_brightness"-->
+            <!--android:textAppearance="?android:textAppearanceLarge"-->
+            <!--android:text="@string/font_size" />-->
+
+        <!--<View-->
+            <!--android:id="@+id/view_divider_font"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="2dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:layout_below="@id/textview_category_font"-->
+            <!--android:background="@android:color/darker_gray" />-->
+
+    </RelativeLayout>
+
+</ScrollView>

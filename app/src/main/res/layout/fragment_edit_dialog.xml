@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="0dp"
+    android:paddingBottom="50dp"
+    android:paddingRight="0dp"
+    android:paddingLeft="50dp"
+    android:background="@drawable/ic_music_edit_bg"
+    tools:context="com.darfoo.mvplayer.EditDialogFragment">
+
+    <ImageButton
+        android:id="@+id/music_edit_close_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/ic_music_edit_close"/>
+
+    <TextView android:id="@+id/edit_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:textSize="25sp"
+        android:text="@string/hello_blank_fragment" />
+
+
+    <ImageButton
+        android:id="@+id/edit_play_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:layout_below="@id/edit_title"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="50dp"
+        android:src="@drawable/mediacontroller_play_button"/>
+
+    <RelativeLayout
+        android:id="@+id/seekbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="50dp"
+        android:layout_toRightOf="@id/edit_play_button"
+        >
+
+        <!--<com.darfoo.mvplayer.widgets.RangeSeekBar
+            android:id="@+id/edit_seekbar"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            style="@style/MediaController_SeekBar"
+            android:layout_centerVertical="true"/>-->
+
+    </RelativeLayout>
+
+
+    <ImageButton
+        android:id="@+id/edit_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@id/seekbar_layout"
+        android:src="@drawable/ic_music_edit_save"/>
+
+    <TextView
+        android:id="@+id/edit_duration_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/edit_confirm"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text="截取时长"
+        android:textSize="18dp"/>
+
+</RelativeLayout>
